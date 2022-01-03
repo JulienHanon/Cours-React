@@ -1,15 +1,20 @@
 import './App.css';
 import ExpenseItem from './component/ExpanseItem.js';
 
+
 function App() {
 
-const title = "Valeur titre"
+const titre = "titre"
+const amount = 92
+
 
   return (
-    <div>
+    <div className="App">
       <h2>Let's get started</h2>
       <ExpenseItem
-      title={title}>
+      title={titre}
+      amount={amount}
+      >
       </ExpenseItem>
     </div>  
   );
