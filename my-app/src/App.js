@@ -5,15 +5,15 @@ import ExpenseItem from './component/ExpanseItem.js';
 function App() {
 
 const titre = "Titre !"
-const amount = 92
+const somme = 92
 
 
   return (
-    <div className="App">
-      <h2>Let's get started</h2>
+    <div className='App'>
+      <h1 className="header">Let's get started</h1>
       <ExpenseItem
       title={titre}
-      amount={amount}
+      somme={somme}
       >
       </ExpenseItem>
     </div>  
