@@ -4,7 +4,7 @@ import ExpenseItem from './component/ExpanseItem.js';
 
 function App() {
 
-const titre = "titre"
+const titre = "Titre !"
 const amount = 92
 
 

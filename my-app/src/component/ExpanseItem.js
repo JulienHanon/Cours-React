@@ -1,25 +1,23 @@
 import './ExpanseItem.css';
-//import React, { useStat } from 'react';
+import React, { useState } from 'react';
 import ExpanseIT from './test.js';
 
 
 
 const ExpenseItem = (props) =>{
 
-    //const [title, setTitle] = useState(props.title);
-   // console.log('ExpenseItem evaluated by React');
+    const [title, setTitle] = useState(props.title);
+    console.log('ExpenseItem evaluated by React');
 
     const clickHandler = () => {
-        //setTitle('updated');
-        console.log('Clique !');
+        setTitle('Updated !');
     };
 
     return(
         <div>
-            <div className='Expense-text'>{props.title}</div>
-            <div>{props.amount}</div>
+            <h3>titre : {title}</h3>
+            <h3>amount : {props.amount}</h3>
             <ExpanseIT></ExpanseIT>
-
             <button onClick={clickHandler}>Change title</button>
         </div>
         
