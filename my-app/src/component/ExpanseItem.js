@@ -20,12 +20,12 @@ const ExpenseItem = (props) =>{
 
     return(
         <div className='Expense-header'>
-            <h3>titre : {title}</h3>
-            <h3>amount : {somme}</h3>
+            <h3>Titre : {title}</h3>
+            <h3>Somme : {somme}</h3>
             <ExpanseIT></ExpanseIT>
             <div>
-                <button onClick={clickHandler}>Change title</button>
-                <button onClick={clickSomme}>Change Amount</button>
+                <button onClick={clickHandler}>Changer titre</button>
+                <button onClick={clickSomme}>Changer somme</button>
             </div>
            
         </div>
