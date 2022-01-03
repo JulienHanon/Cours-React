@@ -1,5 +1,6 @@
 import './App.css';
 import ExpenseItem from './component/ExpanseItem.js';
+import NameForm from './component/test';
 
 
 function App() {
