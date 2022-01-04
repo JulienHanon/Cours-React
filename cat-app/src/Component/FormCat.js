@@ -3,16 +3,16 @@ import React, { useState } from 'react';
 
 
 function FormCat(){
-    
+
+    /*
     const name = "";
     const age = 0;
     const breed = "";
     const height = 0;
-    const weight = 0; {
-        
-    }
-
-    const formSubmissionHandler = event => {
+    const weight = 0; 
+    */
+   
+    const formSubmissionHandler = (event) => {
         event.preventDefault();
         console.log("Form submitted !")
         console.log(event.target.name.value)
@@ -30,7 +30,7 @@ function FormCat(){
            <form onSubmit={formSubmissionHandler}>
                <label>
                     Nom :
-                    <input id={name} type="text" name="name" />
+                    <input id='name' type="text" name="name" />
                     Age : 
                     <input id='age' type="number" name="Age"/>
                     Race : 
