@@ -1,7 +1,7 @@
 import './YourList.css';
-import Cat from './Cat.Js';
 
-function CatList(props){
+
+function YourList(props){
 
     const CAT = [
         {
@@ -43,4 +43,4 @@ function CatList(props){
     ) 
 }
 
-export default CatList; 
+export default YourList; 

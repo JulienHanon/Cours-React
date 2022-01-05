@@ -1,8 +1,7 @@
 import {Link, Outlet } from "react-router-dom";
-import logo from './logo.svg';
+
 import './App.css';
-import YourList from './component/YourList';
-import Cat from './component/Cat.Js';
+
 
 function App() {
   return (
@@ -17,6 +16,8 @@ function App() {
         <Link to="/Home"> Home </Link>
         <Link to="/ListPage"> Your Cat List </Link>
         <Link to="/CatsPhoto"> All Photos of Cats </Link>
+        <Link to="/FormCat"> Form Cat </Link>
+        <Link to="/CatList"> List Cat </Link>
       </nav>
       <Outlet/>
     </div>

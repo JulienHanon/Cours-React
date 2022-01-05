@@ -6,6 +6,8 @@ import App from './App';
 import Home from './routes/Home.js';
 import ListPage from './routes/ListPage.js'; 
 import CatsPhoto from './routes/CatsPhoto.js'; 
+import FormCat from './routes/FormCat.js';
+import CatList from './routes/CatList.js';
 
 const rootElement = document.getElementById('root'); 
 render(
@@ -15,12 +17,10 @@ render(
      <Route path="Home" element = {<Home />}/>
      <Route path="ListPage" element={<ListPage />}/>
      <Route path="CatsPhoto"  element={<CatsPhoto />}/>
+     <Route path="FormCat"  element={<FormCat />}/>
+     <Route path="CatList"  element={<CatList />}/>
      </Route>
    </Routes>
   </BrowserRouter>,  
   rootElement 
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
