@@ -1,5 +1,5 @@
 import './YourList.css';
-import Cat from './Cat.Js';
+
 
 function CatList(props){
 
