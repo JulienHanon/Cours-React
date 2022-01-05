@@ -1,12 +1,5 @@
 
-function Cat(){
+function Cat(props){
 
-    
-   return(
-       <div>
-           <p></p>
-       </div>
-   ) 
 }
-
 export default Cat; 
