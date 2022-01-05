@@ -1,0 +1,19 @@
+.List
+{ 
+    background-color: grey;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 0%;
+    border-radius: 10px;
+}
+.TitleList
+{
+    background-color: chocolate;
+    border-radius: 10px;
+    text-align: center;
+
+}
+ul.CatList li
+{ 
+    margin-bottom: 1em;
+}

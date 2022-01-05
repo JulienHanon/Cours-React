@@ -1,23 +1,24 @@
+import {Link, Outlet } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
+import YourList from './component/YourList';
+import Cat from './component/Cat.Js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Welcome To Your Cat Site !!</h1>
+      <nav
+         style={{
+          borderBottom: "solid 1px",
+          paddingBottom: "1rem", 
+          
+        }}>
+        <Link to="/Home"> Home </Link>
+        <Link to="/ListPage"> Your Cat List </Link>
+        <Link to="/CatsPhoto"> All Photos of Cats </Link>
+      </nav>
+      <Outlet/>
     </div>
   );
 }
