@@ -1,17 +1,8 @@
 import './FormCat.css';
-import React, { useState } from 'react';
+
+function FormCat(props){
 
 
-function FormCat(){
-
-    /*
-    const name = "";
-    const age = 0;
-    const breed = "";
-    const height = 0;
-    const weight = 0; 
-    */
-   
     const formSubmissionHandler = (event) => {
         event.preventDefault();
         console.log("Form submitted !")
@@ -24,7 +15,7 @@ function FormCat(){
     };
 
     return(
-        <div>   
+        <div  className='Cat-header'>   
            <h2>FORMULAIRE</h2>
            <div>
            <form onSubmit={formSubmissionHandler}>
@@ -34,11 +25,17 @@ function FormCat(){
                     Age : 
                     <input id='age' type="number" name="Age"/>
                     Race : 
-                    <input id='breed' type="text" name="Race"/>
+                    <select id='breed'>
+                        <option>RagDoll</option>
+                        <option>MainCoon</option>
+                        <option>Sphinx</option>
+                    </select>
                     Taille :
                     <input id='height' type="number" name="Taille"/>
                     Poids :
                     <input id='weight' type="number" name="Poids"/>
+                    
+
                </label>
                <div>
                      <input type="submit" value="Send" /> 
