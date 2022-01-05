@@ -1,7 +1,7 @@
 import {Link, Outlet } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
-import CatList from './component/CatList';
+import YourList from './component/YourList';
 import Cat from './component/Cat.Js';
 
 function App() {
