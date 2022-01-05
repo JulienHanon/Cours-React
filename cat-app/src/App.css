@@ -1,17 +1,7 @@
 .App {
-
- text-align: center;
- color : rgb(0, 0, 0);
-
+  text-align: center;
 }
-.header{
-  padding-top: 2%;
-  height: 90px;
 
-  margin: 0;
-
-  background : #373e8a; 
-}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -24,7 +14,6 @@
 }
 
 .App-header {
-  
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
