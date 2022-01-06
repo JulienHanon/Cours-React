@@ -1,4 +1,4 @@
-
+import './../UI/Card.css';
 
 function FormCat(props){
 
@@ -15,7 +15,7 @@ function FormCat(props){
     };
 
     return(
-        <div  className='Cat-header'>   
+        <div  className='card'>   
            <h2>FORMULAIRE</h2>
            <div>
            <form onSubmit={formSubmissionHandler}>
