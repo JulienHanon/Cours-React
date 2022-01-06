@@ -1,5 +1,44 @@
+import './../UI/Card.css';
 
-           <h2>FORMULAIRE</h2>
+import React, { useState, useEffect } from 'react';
+
+function FormCat(props){
+
+    const[breed, setBreed] = useState(['','','']);
+
+    const fetchCatBreed = async () =>{
+        const response = await fetch('https://api.thecatapi.com/v1/breeds');
+        const data = await response.json();  
+        const transformedBreed = data.map((breedData) =>{
+            return{
+                id : breedData.id,
+                breed : breedData.name,
+            };
+        });
+        setBreed(transformedBreed); 
+           
+     }
+
+     useEffect(() => {
+        let timer = setTimeout(() => {
+        fetchCatBreed();
+        }, 100);
+        
+        
+        
+        return () => clearTimeout(timer)
+        }, []);
+
+
+    const formSubmissionHandler = (event) => {
+        event.preventDefault();
+        console.log("Form submitted !")
+    
+    };
+
+    return(
+        <div  className='card'>   
+          <h2>FORMULAIRE</h2>
            <div>
            <button onClick={fetchCatBreed}>Ajout des races</button>
            <form onSubmit={formSubmissionHandler}>
@@ -25,7 +64,6 @@
            </form>
            </div>
         </div>
-        </>
     );
 }
 
