@@ -1,7 +1,7 @@
 import {Link, Outlet } from "react-router-dom";
 import './App.css';
-import Home from "./routes/Home";
-import Card from "./UI/Card";
+
+
 
 
 function App() {
@@ -17,8 +17,6 @@ function App() {
           
         }}>
         <Link to="/Home"> Home </Link>
-        <Link to="/ListPage"> Your Cat List </Link>
-        <Link to="/CatsPhoto"> All Photos of Cats </Link>
         <Link to="/FormPage"> Form Page </Link>
         <Link to="/CatList"> List Cat </Link>
       </nav>

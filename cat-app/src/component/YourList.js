@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './YourList.css';
+import './../UI/Card.css';
 
 
 
@@ -12,7 +13,7 @@ function YourList(props){
     // ici la liste de chat qu'on pourra modifier grace
     // au formulaire
     return (
-        <div className='List'>
+        <div className='List, card'>
             <header className="TitleList">
                 <h2> Your Cat's CatList</h2>
             </header>

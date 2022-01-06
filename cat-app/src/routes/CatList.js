@@ -26,7 +26,12 @@ import './CatList.css';
     
     
     return (
-
+        <div className='card'>
+        <button onClick={fetchCatBreed}>Cliquer sur moi !</button>
+        <div>
+               <img src={cat[0].url}></img>
+        </div>
+        </div>
     );
 }
 
