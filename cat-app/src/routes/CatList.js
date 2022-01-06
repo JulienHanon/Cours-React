@@ -12,11 +12,11 @@ import React, { useState, useEffect } from 'react';
     }
 
     return (
-   
-       <button onClick={fetchCatBreed}>cliquer moi !</button>
-
+      <>
+         <button onClick={fetchCatBreed}>cliquer moi !</button>; 
+      </>
     );
-    }
+}
 
 
 export default CatList;
