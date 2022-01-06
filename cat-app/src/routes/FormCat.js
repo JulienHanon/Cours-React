@@ -3,12 +3,12 @@ import YourList from "../component/YourList";
 function FormCat(props){
 
 
-    const [cat, setCat] = useState([]);
-    const [name, setName] = useState(''); 
-    const [age, setAge] = useState(0); 
-    const [breed, setBreed] = useState(''); 
-    const [height, setHeight] = useState(0); 
-    const [weight, setWeight] = useState(0); 
+    //const [cat, setCat] = useState([]);
+    //const [name, setName] = useState(''); 
+    //const [age, setAge] = useState(0); 
+    //const [breed, setBreed] = useState(''); 
+    //const [height, setHeight] = useState(0); 
+    //const [weight, setWeight] = useState(0); 
 
             //console.log("Form submitted !")
         //console.log(event.target.name.value)
@@ -16,9 +16,10 @@ function FormCat(props){
         //console.log(event.target.breed.value)
         //console.log(event.target.height.value)
         //console.log(event.target.weight.value)
-    const formSubmissionHandler = (event ) => {
+    const formSubmissionHandler = (event) => {
         event.preventDefault();
         const catData = {
+            id: Math.random().toString(),
             name: event.target.name.value, 
             age: event.target.age.value, 
             breed: event.target.breed.value, 
