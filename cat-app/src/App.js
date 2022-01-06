@@ -1,5 +1,4 @@
 import {Link, Outlet } from "react-router-dom";
-import TestUseEffect from './component/TestUseEffect'
 import './App.css';
 
 
@@ -20,7 +19,6 @@ function App() {
         <Link to="/CatList"> List Cat </Link>
       </nav>
       <Outlet/>
-      <TestUseEffect></TestUseEffect>
     </div>
   );
 }

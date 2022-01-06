@@ -7,7 +7,6 @@ import './YourList.css';
 function YourList(props){
 
     //const [currentcat, setCurrentCat] = useState(props.ListCat); 
-    console.log(props.ListCat); 
     // declarer avec useState un tableau a vide 
     // qui va accueillir plus tard les données à afficher 
     // ici la liste de chat qu'on pourra modifier grace

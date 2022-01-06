@@ -2,20 +2,6 @@ import React, {useState}from "react";
 import YourList from "../component/YourList";
 function FormCat(props){
 
-
-    //const [cat, setCat] = useState([]);
-    //const [name, setName] = useState(''); 
-    //const [age, setAge] = useState(0); 
-    //const [breed, setBreed] = useState(''); 
-    //const [height, setHeight] = useState(0); 
-    //const [weight, setWeight] = useState(0); 
-
-            //console.log("Form submitted !")
-        //console.log(event.target.name.value)
-        //console.log(event.target.age.value)
-        //console.log(event.target.breed.value)
-        //console.log(event.target.height.value)
-        //console.log(event.target.weight.value)
     const formSubmissionHandler = (event) => {
         event.preventDefault();
         const catData = {
@@ -26,7 +12,6 @@ function FormCat(props){
             height: event.target.height.value, 
             weight: event.target.weight.value, 
         }; 
-        console.log(catData);  
         props.onAddCat(catData); 
        
     };
@@ -59,9 +44,7 @@ function FormCat(props){
            </form>
            </div>
         </div>
-
         </>
-        
     );
 }
 
