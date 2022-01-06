@@ -8,6 +8,7 @@ import ListPage from './routes/ListPage.js';
 import CatsPhoto from './routes/CatsPhoto.js'; 
 import FormCat from './routes/FormCat.js';
 import CatList from './routes/CatList.js';
+import FormPage from './routes/FormPage';
 
 const rootElement = document.getElementById('root'); 
 render(
@@ -17,7 +18,7 @@ render(
      <Route path="Home" element = {<Home />}/>
      <Route path="ListPage" element={<ListPage />}/>
      <Route path="CatsPhoto"  element={<CatsPhoto />}/>
-     <Route path="FormCat"  element={<FormCat />}/>
+     <Route path="FormPage"  element={<FormPage />}/>
      <Route path="CatList"  element={<CatList />}/>
      </Route>
    </Routes>
