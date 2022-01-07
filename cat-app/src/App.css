@@ -14,14 +14,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #a1a097;
+  padding: 60px 0px 0px;  
+
 }
 
 .App-link {
@@ -35,4 +30,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.sleepingcat
+{
+  position: relative; 
+  top: 45px; 
+  left: 340px;  
+  height :150px; 
+  width: 150px;
+  float: left;
+}
+
+.backcat
+{
+  position: relative; 
+  top: 1px;
+  left: 700px;  
+  height :150px; 
+  width: 150px;
+  float: left; 
+}
+.NavButton{
+  margin-left: 45%;  
+  transform: translate(-50%, -50%); 
 }

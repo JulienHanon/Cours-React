@@ -1,25 +1,26 @@
 import {Link, Outlet } from "react-router-dom";
 import './App.css';
-
+import HomeButton from "./component/HomeButton";
+import FormPageButton from "./component/FormPageButton";
+import CatListButton from "./component/CatListButton";
+import FormPage from "./routes/FormPage";
 
 
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome To Your Cat Site !!</h1>
-      
-     
-      <nav
-         style={{
-          borderBottom: "solid 1px",
-          paddingBottom: "1rem", 
-          
-        }}>
-        <Link to="/Home"> Home </Link>
-        <Link to="/FormPage"> Form Page </Link>
-        <Link to="/CatList"> List Cat </Link>
-      </nav>
+      <header className="App-header">
+        
+        <div className="NavButton"> 
+        <div className="sleepingcat"><img src={require("./asset/sleepingcat.png")}></img></div>
+          <HomeButton></HomeButton>
+          <FormPageButton></FormPageButton>
+          <CatListButton></CatListButton>
+           <div className="backcat"><img src={require("./asset/catTitle2.png")} ></img></div> 
+        </div>
+      </header>
+      <br></br>
       <Outlet/>
     </div>
   );
