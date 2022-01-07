@@ -55,9 +55,10 @@ function FormCat(props){
                     <input id='age' type="number" name="Age"/>
                     Race : 
                     <select id='breed'>
-                        <option>{breed[0].breed}</option>
-                        <option>{breed[1].breed}</option>
-                        <option>{breed[2].breed}</option>
+                        <option>Standard (whitout breed)</option>
+                        {breed.map((breed) => (
+                            <option> {breed.breed}</option>
+                        ))}
                     </select>
                     Taille :
                     <input id='height' type="number" name="Taille"/>
