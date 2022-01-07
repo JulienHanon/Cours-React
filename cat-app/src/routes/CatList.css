@@ -1,4 +1,9 @@
 img {
-    width: 50%;
-    height: 50%;
+    max-width: 100%;
+	height: 100%;
+    block-size: 250px;
+}
+
+*{
+    cursor: url('./../UI/paw.png'),auto;
 }

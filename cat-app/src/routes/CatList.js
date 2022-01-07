@@ -1,6 +1,5 @@
 
 import React, { useState, useEffect } from 'react';
-import Card from '../UI/Card';
 import './../UI/Card.css';
 import './CatList.css';
 
@@ -22,15 +21,23 @@ import './CatList.css';
         
           
     }
-    const UneImage = cat.map (cat => (<h1>{cat.url}</h1>))
+
+    useEffect(() => {
+        let timer = setTimeout(() => {
+          fetchCatBreed();
+        }, 0);
+      return()=> clearTimeout(timer)
+    }, []);
     
     
     return (
         <div className='card'>
-        <button onClick={fetchCatBreed}>Cliquer sur moi !</button>
+        <button onClick={fetchCatBreed}>LIKE</button>
+        <button onClick={fetchCatBreed}>DISLIKE</button>
         <div>
                <img src={cat[0].url}></img>
         </div>
+        <button>Favorite</button>
         </div>
     );
 }
