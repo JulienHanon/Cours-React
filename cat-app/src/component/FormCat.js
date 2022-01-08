@@ -1,6 +1,5 @@
 import './../UI/Card.css';
 import React, { useState, useEffect } from 'react';
-import './../UI/Card.css';
           
 function FormCat(props){
           

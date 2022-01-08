@@ -4,9 +4,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import Home from './routes/Home.js';
-import ListPage from './routes/ListPage.js'; 
-import CatsPhoto from './routes/CatsPhoto.js'; 
-import FormCat from './routes/FormCat.js';
 import CatList from './routes/CatList.js';
 import FormPage from './routes/FormPage';
 

@@ -1,6 +1,6 @@
 import React, {useState}from "react";
 import YourList from "../component/YourList";
-import FormCat from "./FormCat";
+import FormCat from "../component/FormCat";
 
 function FormPage()
 {
