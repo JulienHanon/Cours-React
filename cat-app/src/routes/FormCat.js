@@ -1,6 +1,6 @@
 import './../UI/Card.css';
 import React, { useState, useEffect } from 'react';
-
+import './../UI/Card.css';
           
 function FormCat(props){
           
@@ -46,27 +46,33 @@ function FormCat(props){
         <div  className='card'>    
            <h2>FORMULAIRE</h2>
            <div>
-           <button onClick={fetchCatBreed}>Ajout des races</button>
-           <form onSubmit={formSubmissionHandler}>
+           <form onSubmit={formSubmissionHandler} className='card'>
                <label>
                     Nom :
-                    <input id='name' type="text" name="name" />
+                    <input id='name' type="text" name="name" className='card'/>
+                    <br></br>
                     Age : 
-                    <input id='age' type="number" name="Age"/>
+                    <input id='age' type="number" name="Age" className='card'/>
+                    <br></br>
                     Race : 
-                    <select id='breed'>
+                    <select id='breed' className='card'>
                         <option>Standard (without breed)</option>
                         {breed.map((breed) => (
                             <option> {breed.breed}</option>
                         ))}
                     </select>
+                    <br></br>
                     Taille :
-                    <input id='height' type="float" name="Taille"/>
+                    <input id='height' type="float" name="Taille" className='card'/>
+                    <br></br>
                     Poids :
-                    <input id='weight' type="float" name="Poids"/>
+                    <input id='weight' type="float" name="Poids" className='card'/>
+                    <br></br>
                </label>
                <div>
-                     <input type="submit" value="Send" /> 
+                   <br></br>
+                     <input type="submit" value="Send" className='sendbutton'/>
+                    <br></br> 
                </div>
            </form>
            </div>

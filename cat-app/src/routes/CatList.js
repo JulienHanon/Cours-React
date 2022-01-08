@@ -18,18 +18,16 @@ import './CatList.css';
        });
        setCat(transformedCat);   
        console.log("transformedCat",transformedCat);
-       console.log("cat",cat[0].url);
-        
-          
+       console.log("cat",cat[0].url);   
     }
     const UneImage = cat.map (cat => (<h1>{cat.url}</h1>))
     
     
     return (
         <div className='card'>
-        <button onClick={fetchCatBreed}>Cliquer sur moi !</button>
+        <button onClick={fetchCatBreed} className='button'>Cliquer sur moi !</button>
         <div>
-               <img src={cat[0].url}></img>
+            <img src={cat[0].url}></img>
         </div>
         </div>
     );

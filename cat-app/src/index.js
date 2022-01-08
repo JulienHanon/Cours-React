@@ -16,8 +16,6 @@ render(
    <Routes>
      <Route path="/" element = {<App />}>
      <Route path="Home" element = {<Home />}/>
-     <Route path="ListPage" element={<ListPage />}/>
-     <Route path="CatsPhoto"  element={<CatsPhoto />}/>
      <Route path="FormPage"  element={<FormPage />}/>
      <Route path="CatList"  element={<CatList />}/>
      </Route>

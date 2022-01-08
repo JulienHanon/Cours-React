@@ -19,7 +19,7 @@ function YourList(props){
             </header>
                 <ul className="CatList">
                   {props.ListCat.map((cat) => (
-                      <li key={cat.id}>{cat.name} - {cat.age} year 
+                      <li key={cat.id} className='card'>{cat.name} - {cat.age} year 
                       -{cat.breed} - {cat.height} cm 
                       - {cat.weight} kg</li>
                   ))} 

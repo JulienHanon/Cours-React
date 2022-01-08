@@ -2,3 +2,9 @@ img {
     width: 50%;
     height: 50%;
 }
+.button 
+{
+    margin-right: 17%;
+    margin-left: 17%; 
+    margin-bottom: 0%;
+}

@@ -35,8 +35,9 @@
 .sleepingcat
 {
   position: relative; 
-  top: 45px; 
-  left: 340px;  
+  top: -61px; 
+  padding: 0;
+  left: 725px;  
   height :150px; 
   width: 150px;
   float: left;
@@ -45,13 +46,14 @@
 .backcat
 {
   position: relative; 
-  top: 1px;
-  left: 700px;  
+  top: -43px;
+  left: 965px;  
   height :150px; 
   width: 150px;
   float: left; 
 }
 .NavButton{
-  margin-left: 45%;  
+  margin-left: 50%;  
   transform: translate(-50%, -50%); 
 }
+
