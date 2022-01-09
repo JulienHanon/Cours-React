@@ -1,7 +1,7 @@
 import Card from "../UI/Card";
 import './../UI/Card.css';
 import './Home.css'; 
-<img src={require('../asset/backgroundapp.png')} className="background"></img>
+// On Renvoi Le Titre de la page Home avec la presentation du site ainsi que le background (présent dans le Home.css)
 function Home(){
     
     return(

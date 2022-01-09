@@ -4,7 +4,7 @@ import "../UI/Card.css";
 import "./AppButton.css"; 
 
 
-
+//Component créant un bouton permettant d'acceder à la page CatList
 function CatListButton()
 {
     return (

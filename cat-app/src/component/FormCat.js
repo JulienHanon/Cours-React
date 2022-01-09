@@ -1,9 +1,10 @@
 import './../UI/Card.css';
 import React, { useState, useEffect } from 'react';
 import './FormCat.css'
+import './AppButton.css'
           
 function FormCat(props){
-          
+    //On Renvoie le données du formulaire à la page du formulaire pour raouter un chat à la liste      
     const formSubmissionHandler = (event) => {
         event.preventDefault();
         const catData = {
@@ -18,6 +19,7 @@ function FormCat(props){
        
     };
 
+    //On réucpère toutes les races dans un tableau à l'aide d'une requête API
     const[breed, setBreed] = useState(['','','']);
           
         const fetchCatBreed = async () =>{
@@ -41,7 +43,7 @@ function FormCat(props){
         return () => clearTimeout(timer)
         }, []);
           
-          
+    //On renvoi un formulaire pour rentrer le nom, l'age, la race, la taille et le poids du chat  
     return(
         <div  className='card' id='FormCard'> 
             <div id='FormTitle'>
@@ -74,7 +76,7 @@ function FormCat(props){
                </label>
                <div>
                    <br></br>
-                     <input type="submit" value="Send" className='sendbutton'/>
+                     <input type="submit" value="Send" className='AppButton'/>
                     <br></br> 
                </div>
            </form>
