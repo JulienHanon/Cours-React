@@ -1,14 +1,22 @@
-import {Link, Outlet, Routes, Route } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import './App.css';
+import React, { useEffect } from "react";
 import HomeButton from "./component/HomeButton";
 import FormPageButton from "./component/FormPageButton";
 import CatListButton from "./component/CatListButton";
-import FormPage from "./routes/FormPage";
-import Home from './routes/Home.js';
+
 
 
 
 function App() {
+
+  let navigate = useNavigate(); 
+  useEffect(() => {
+    navigate('/Home'); 
+    return () => {
+    }
+  }, [])
+
   return (
     <div className="App">
       <header className="App-header">
@@ -22,7 +30,7 @@ function App() {
       </header>
       <br></br>
       <Outlet/>
-      
+     
     </div>
   );
 }

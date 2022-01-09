@@ -1,6 +1,7 @@
 import React, {useState}from "react";
 import YourList from "../component/YourList";
 import FormCat from "../component/FormCat";
+import './FormPage.css'
 
 function FormPage()
 {
@@ -20,7 +21,7 @@ function FormPage()
     }; 
     return(
 
-        <div>
+        <div className="FormPage">
             <FormCat onAddCat={addCatHandler} ></FormCat>
             <YourList ListCat={listcat}></YourList>
         </div>

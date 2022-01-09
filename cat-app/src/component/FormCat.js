@@ -1,5 +1,6 @@
 import './../UI/Card.css';
 import React, { useState, useEffect } from 'react';
+import './FormCat.css'
           
 function FormCat(props){
           
@@ -42,10 +43,13 @@ function FormCat(props){
           
           
     return(
-        <div  className='card'>    
-           <h2>FORMULAIRE</h2>
+        <div  className='card' id='FormCard'> 
+            <div id='FormTitle'>
+                <h2 className='TitleForm'>FORMULAIRE</h2>
+            </div>   
+          
            <div>
-           <form onSubmit={formSubmissionHandler} className='card'>
+           <form onSubmit={formSubmissionHandler} className='card' id='DataForm'>
                <label>
                     Nom :
                     <input id='name' type="text" name="name" className='card'/>

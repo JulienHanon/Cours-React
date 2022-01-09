@@ -1,0 +1,17 @@
+#DataForm{
+    background: linear-gradient(#ffafbd, #ffb88c);
+}
+#FormCard{
+    background: linear-gradient(rgb(255, 229, 177) , #faaca8); 
+}
+#FormTitle{
+    background-color: white;
+    width: 100%;
+    margin-right: auto; 
+    margin-left: auto;
+}
+.TitleForm{
+    padding: 40px;
+    text-align: center;
+    
+}
