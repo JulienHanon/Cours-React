@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: rgb(255, 230, 180); 
 }
 
 .App-logo {
@@ -14,14 +15,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgb(128, 89, 68);
+  padding: 60px 0px 0px;  
+
 }
 
 .App-link {
@@ -36,3 +32,28 @@
     transform: rotate(360deg);
   }
 }
+.sleepingcat
+{
+  position: relative; 
+  top: -61px; 
+  padding: 0;
+  left: 745px;  
+  height :150px; 
+  width: 150px;
+  float: left;
+}
+
+.backcat
+{
+  position: relative; 
+  top: -43px;
+  left: 985px;  
+  height :150px; 
+  width: 150px;
+  float: left; 
+}
+.NavButton{
+  margin-left: 50%;  
+  transform: translate(-50%, -50%); 
+}
+

@@ -1,9 +1,10 @@
 import './../UI/Card.css';
 import React, { useState, useEffect } from 'react';
-
+import './FormCat.css'
+import './AppButton.css'
           
 function FormCat(props){
-          
+    //On Renvoie le données du formulaire à la page du formulaire pour raouter un chat à la liste      
     const formSubmissionHandler = (event) => {
         event.preventDefault();
         const catData = {
@@ -18,6 +19,7 @@ function FormCat(props){
        
     };
 
+    //On réucpère toutes les races dans un tableau à l'aide d'une requête API
     const[breed, setBreed] = useState(['','','']);
           
         const fetchCatBreed = async () =>{
@@ -41,31 +43,41 @@ function FormCat(props){
         return () => clearTimeout(timer)
         }, []);
           
-          
+    //On renvoi un formulaire pour rentrer le nom, l'age, la race, la taille et le poids du chat  
     return(
-        <div  className='card'>    
-           <h2>FORMULAIRE</h2>
+        <div  className='card' id='FormCard'> 
+            <div id='FormTitle'>
+                <h2 className='TitleForm'>FORMULAIRE</h2>
+            </div>   
+          
            <div>
-           <button onClick={fetchCatBreed}>Ajout des races</button>
-           <form onSubmit={formSubmissionHandler}>
+           <form onSubmit={formSubmissionHandler} className='card' id='DataForm'>
                <label>
                     Nom :
-                    <input id='name' type="text" name="name" />
+                    <input id='name' type="text" name="name" className='card'/>
+                    <br></br>
                     Age : 
-                    <input id='age' type="number" name="Age"/>
+                    <input id='age' type="number" name="Age" className='card'/>
+                    <br></br>
                     Race : 
-                    <select id='breed'>
-                        <option>{breed[0].breed}</option>
-                        <option>{breed[1].breed}</option>
-                        <option>{breed[2].breed}</option>
+                    <select id='breed' className='card'>
+                        <option>Standard (without breed)</option>
+                        {breed.map((breed) => (
+                            <option> {breed.breed}</option>
+                        ))}
                     </select>
+                    <br></br>
                     Taille :
-                    <input id='height' type="number" name="Taille"/>
+                    <input id='height' type="float" name="Taille" className='card'/>
+                    <br></br>
                     Poids :
-                    <input id='weight' type="number" name="Poids"/>
+                    <input id='weight' type="float" name="Poids" className='card'/>
+                    <br></br>
                </label>
                <div>
-                     <input type="submit" value="Send" /> 
+                   <br></br>
+                     <input type="submit" value="Send" className='AppButton'/>
+                    <br></br> 
                </div>
            </form>
            </div>

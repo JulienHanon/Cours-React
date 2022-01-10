@@ -1,6 +1,5 @@
 .List
 { 
-    background-color: grey;
     margin-left: 30%;
     margin-right: 30%;
     margin-top: 0%;
@@ -8,12 +7,24 @@
 }
 .TitleList
 {
-    background-color: chocolate;
+    background: linear-gradient(#42275a, #734b6d);
+    color: white; 
     border-radius: 10px;
     text-align: center;
 
 }
 ul.CatList li
 { 
+   
     margin-bottom: 1em;
+    list-style: none;
+    color: white
+}
+
+#ListCard{
+    background: linear-gradient(#aa076b, #61045f);
+}
+
+#ListItem{
+    background: linear-gradient(#42275a, #734b6d);
 }
