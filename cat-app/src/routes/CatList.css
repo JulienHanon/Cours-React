@@ -9,7 +9,9 @@ img {
 *{
     cursor: url('./../UI/paw.png'),auto;
 }
-
+.catlist{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 .button 
 {

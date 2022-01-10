@@ -14,8 +14,8 @@ function Favorite(){
             },
             body: JSON.stringify(
                 {
-                "image_id":"asf2",
-                "sub_id": "my-user-1234"
+                    "image_id":"asf2",
+                    "sub_id": "my-user-1234"
                 })
         };
 
@@ -29,14 +29,14 @@ function Favorite(){
 
 
         const fetchCatFav = async () =>{
-            const requestOptions = {
+            const GetOption = {
                 method: 'GET',
                 headers: {
-                'Content-Type': 'application/json' ,
-                'x-api-key': 'b97d2fc3-9baf-4e4f-870a-5d418ca10d62'
+                    'Content-Type': 'application/json' ,
+                    'x-api-key': 'b97d2fc3-9baf-4e4f-870a-5d418ca10d62'
                 },
             };
-            const response = await fetch('https://api.thecatapi.com/v1/images/search%27');
+            const response = await fetch('https://api.thecatapi.com/v1/favourites', GetOption);
             const data = await response.json();
             const transformedFav = data.map((catFav) =>{
                 return{

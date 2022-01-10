@@ -11,7 +11,10 @@ import CatListButton from "./component/CatListButton";
 function App() {
 
   //permet de nous rediriger directement sur la page Home quand on arrive sur le site
-
+  let navigate = useNavigate();
+  useEffect(() => {
+    navigate("/Home")
+    },[]);
 
   //On Renvoi Les boutons de navigation du site ainsi que les deux photos de chats présents en décoration autour des boutons
   return (

@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   background-color: rgb(255, 230, 180); 
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 
 }
 
@@ -16,7 +17,7 @@
   position: relative; 
   top: -149px; 
   padding: 0;
-  left: 750px;  
+  left: 730px;  
   height :70px; 
   width: 150px;
   float: left;
