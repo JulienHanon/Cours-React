@@ -3,7 +3,6 @@ import './../UI/Card.css';
 import './Home.css'; 
 // On Renvoi Le Titre de la page Home avec la presentation du site ainsi que le background (présent dans le Home.css)
 function Home(){
-    
     return(
         <div className='home'>
             
