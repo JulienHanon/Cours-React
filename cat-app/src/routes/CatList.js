@@ -1,5 +1,7 @@
 
-import React, { useState } from 'react';
+
+import React, { useState, useEffect } from 'react';
+
 import './../UI/Card.css';
 import './CatList.css';
 
@@ -21,21 +23,32 @@ import './CatList.css';
        console.log("transformedCat",transformedCat);
        console.log("cat",cat[0].url);   
     }
-    const UneImage = cat.map (cat => (<h1>{cat.url}</h1>))
+
+    useEffect(() => {
+        let timer = setTimeout(() => {
+          fetchCatBreed();
+        }, 0);
+      return()=> clearTimeout(timer)
+    }, []);
     
     //On renvoi un bouton (permettant d'avoir une nouvelle photo) ainsi que la photo requêtée ci-dessus
     return (
+
         <>
             <div className='card'>
-            <button onClick={fetchCatBreed} className='button'>Cliquer sur moi !</button>
+            <button onClick={fetchCatBreed}>LIKE</button>
+            <button onClick={fetchCatBreed}>DISLIKE</button>
             <div>
                 <img src={cat[0].url}></img>
+            </div>
+            <div>
+              <button>Favorite</button>  
             </div>
             </div>
             <br></br>
             <div id='backgroud-page'></div>
         </>
-        
+
     );
 }
 
