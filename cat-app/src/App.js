@@ -1,4 +1,4 @@
-import { Outlet, useNavigate } from "react-router-dom";
+import { Outlet, useNavigate} from "react-router-dom";
 import './App.css';
 import React, { useEffect } from "react";
 import HomeButton from "./component/HomeButton";
@@ -11,6 +11,7 @@ import CatListButton from "./component/CatListButton";
 function App() {
 
   //permet de nous rediriger directement sur la page Home quand on arrive sur le site
+
   let navigate = useNavigate(); 
   useEffect(() => {
     navigate('/Home'); 
