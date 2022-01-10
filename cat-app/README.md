@@ -68,3 +68,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Dépendances du projet :
+nvm version : 1.1.7
+npm version : 6.6.7
+Nodejs version : 16.31.1
+React version : 12.1.2
+React Router V6 qui s'installe avec `npm install react-router-dom@6`
+
+### L'application est composé de trois pages 
+Une page d'acceuil Home expliquant au visiteurs comment fonctionne le site 
+Une page FormPage qui permet à l'utilisateur de remplir sa liste de chats avec un formulaire 
+Une page CatList qui utlie une API [https://thecatapi.com/] pour afficher une photo de chat aléatoirement et demande
+à l'utilisateur si il aime ou pas et lui permet d'ajouter la photo à ses favoris si il le souhaite.
+
+###
