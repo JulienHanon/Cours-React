@@ -16,7 +16,8 @@ function FormCat(props){
             height: event.target.height.value, 
             weight: event.target.weight.value, 
         }; 
-        if(catData.name != '' || catData.age != 0 || catData.height != null || catData.weight != null)
+        console.log(catData.name); 
+        if(catData.name != '' && catData.age != 0 && catData.height != '' && catData.weight != '')
         {
             props.onAddCat(catData); 
         }
