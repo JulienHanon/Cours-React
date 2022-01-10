@@ -4,21 +4,10 @@
 
 }
 
-.App-logo {
-  
-  pointer-events: none;
-}
-
 .App-header {
   background-color: rgb(128, 89, 68);
   padding: 60px 0px 0px;  
 
-}
-
-.App
-
-.App-link {
-  color: #61dafb;
 }
 
 
@@ -27,22 +16,12 @@
   position: relative; 
   top: -149px; 
   padding: 0;
-  left: 720px;  
+  left: 750px;  
   height :70px; 
   width: 150px;
   float: left;
+  transform: scale(1); 
 }
-
-.backcat
-{
-  position: relative; 
-  top: -43px;
-  left: 985px;  
-  height :10px; 
-  width: 150px;
-  float: left; 
-}
-
 .NavButton{
   margin-left: 50%;  
   transform: translate(-50%, -50%); 

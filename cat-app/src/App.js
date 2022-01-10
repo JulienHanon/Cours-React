@@ -4,7 +4,6 @@ import React, { useEffect } from "react";
 import HomeButton from "./component/HomeButton";
 import FormPageButton from "./component/FormPageButton";
 import CatListButton from "./component/CatListButton";
-import Favorite from "./component/Favorite";
 
 
 
@@ -19,7 +18,6 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className="sleepingcat"><img src={require("./asset/sleepingcat.png")}></img></div>
-        <div className="backcat"><img src={require("./asset/catTitle2.png")} ></img></div> 
         <div className="NavButton"> 
         
           <HomeButton></HomeButton>
@@ -27,7 +25,6 @@ function App() {
           <CatListButton></CatListButton>
         </div>
       </header>
-      <Favorite></Favorite>
       <br></br>
       <Outlet/>
      

@@ -36,13 +36,13 @@ import './CatList.css';
 
         <>
             <div className='card'>
-            <button onClick={fetchCatBreed}>LIKE</button>
-            <button onClick={fetchCatBreed}>DISLIKE</button>
+            <div className='like-dislike'>
+            <button onClick={fetchCatBreed} id='likebutton'>LIKE</button>
+            <button onClick={fetchCatBreed} id='dislikebutton'>DISLIKE</button>
+            </div>
+            <br></br>
             <div>
                 <img src={cat[0].url}></img>
-            </div>
-            <div>
-              <button>Favorite</button>  
             </div>
             </div>
             <br></br>
