@@ -1,0 +1,22 @@
+  .Title{
+    position: fixed; 
+    margin-left: 8%;
+    top: 250px; 
+  }
+  .TextTitle{
+    font-size: 1000%;
+    color: white;
+    text-shadow: 10px 10px 10px rgb(0, 0, 0);
+  }
+  .home{
+      background-image: url("../asset/backgroundapp.png");
+      background-size: cover;
+      position: fixed; 
+      top: 115px; 
+      left: 0; 
+      min-width: 100%;
+      min-height: 100%;
+      width: 100%;
+      height: auto;
+  }
+  
