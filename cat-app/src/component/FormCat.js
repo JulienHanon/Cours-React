@@ -4,6 +4,7 @@ import './FormCat.css'
 import './AppButton.css'
           
 function FormCat(props){
+
     //On Renvoie le données du formulaire à la page du formulaire pour raouter un chat à la liste      
     const formSubmissionHandler = (event) => {
         event.preventDefault();
@@ -15,8 +16,13 @@ function FormCat(props){
             height: event.target.height.value, 
             weight: event.target.weight.value, 
         }; 
-        props.onAddCat(catData); 
-       
+        if(catData.name != '' || catData.age != 0 || catData.height != null || catData.weight != null)
+        {
+            props.onAddCat(catData); 
+        }
+        else {
+            alert("Le formulaire n'est pas bien rempli"); 
+        }
     };
 
     //On réucpère toutes les races dans un tableau à l'aide d'une requête API
@@ -81,8 +87,7 @@ function FormCat(props){
                </div>
            </form>
            </div>
-        </div>
-        
+        </div> 
     );
 }
 

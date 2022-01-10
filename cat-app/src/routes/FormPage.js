@@ -8,11 +8,11 @@ function FormPage()
     //On initialise une liste de chat avec des attributs 
     const [listcat, setListCat] = useState([{
         id: Math.random().toString(),
-        name: 'Test', 
-        age: 0, 
-        breed: 'test', 
-        height: 0, 
-        weight: 0,
+        name: 'Kira', 
+        age: 1, 
+        breed: 'Bombay', 
+        height: 54, 
+        weight: 4.2,
     }]); 
     //Cette fonction va permettre de remplir la liste de chat avec le chat que l'on vient de rentrer plus les précédents
     //cette fonction est envoyé en props au component FormCat (le formulaire)
